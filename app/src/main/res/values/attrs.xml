@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <attr name="indicatorIcon" format="reference" />
+    <attr name="indicatorMargin" format="dimension" />
+    <attr name="indicatorSmooth" format="boolean" />
+    <attr name="indicatorSize" format="dimension" />
+
+    <declare-styleable name="IndicatorView">
+        <!--指示器樣式-->
+        <attr name="indicatorIcon" />
+        <!--指示器的間距-->
+        <attr name="indicatorMargin" />
+        <!--指示器是否顯示滑動效果-->
+        <attr name="indicatorSmooth" />
+        <!--指示器的大小-->
+        <attr name="indicatorSize" />
+    </declare-styleable>
+
+</resources>

@@ -23,7 +23,6 @@ public class MainActivity extends AppCompatActivity {
     //參數
     private ViewPager mViewPager;
 
-    //假資料
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -31,6 +30,7 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
         mContext = this;
         mViewPager = (ViewPager) findViewById(R.id.view_pager);
+
 
         //假資料
         List<String> mUrlList = new ArrayList<>();
@@ -42,6 +42,9 @@ public class MainActivity extends AppCompatActivity {
         //呼叫Adapter
         BannerAdapter bannerAdapter = new BannerAdapter(this, mUrlList);
         mViewPager.setAdapter(bannerAdapter);
+        IndicatorView indicatorView = (IndicatorView) findViewById(R.id.id_view_indicator);
+        indicatorView.setViewPager(mViewPager);
+
 
     }
 
